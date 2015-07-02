@@ -1,4 +1,4 @@
-<?php
+<!-- Template: template-custom.php --><?php
 /**
  * Template Name: Custom Template
  */
