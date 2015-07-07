@@ -10,6 +10,10 @@ function assets() {
 		wp_enqueue_script('comment-reply');
 	}
 
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', get_template_directory_uri().'/assets/scripts/jquery.min.js', false, '');
+	wp_enqueue_script('jquery');
+
 	wp_enqueue_script('bootstrap_js', get_template_directory_uri().'/assets/scripts/bootstrap.min.js', ['jquery'], null, true);
 	wp_enqueue_script('main_js', get_template_directory_uri().'/assets/scripts/main.js', ['jquery'], null, true);
 }
