@@ -17,8 +17,8 @@ function assets() {
 	wp_enqueue_script('bootstrap_js', get_template_directory_uri().'/assets/scripts/bootstrap.min.js', ['jquery'], null, true);
 	wp_enqueue_script('main_js', get_template_directory_uri().'/assets/scripts/main.js', ['jquery'], null, true);
 }
-
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
 
 
 /* Compile the .less on every access of logged in user. */
